@@ -1,4 +1,4 @@
-This is a project in progress on vehicle carbon emissions.
+This is a project in progress on vehicle carbon emissions in Europe.
 
 **Tech stack**
 - Biquery
