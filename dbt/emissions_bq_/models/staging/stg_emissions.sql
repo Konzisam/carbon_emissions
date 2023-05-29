@@ -19,7 +19,9 @@ select 	e.ID,
         Commercial_Name,
         Mass_RO,
         Emissions_WLTP,
-        Fuel_type,
+        case when Fuel_type ='petrol/electric' then 'PETROL/ELECTRIC' 
+                when Fuel_type='NG-BIOMETHANE' then 'NG' 
+                else Fuel_type end as Fuel_type,
         Fuel_mode,
         Engine_capacity,
         Engine_power,
