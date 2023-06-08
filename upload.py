@@ -45,9 +45,9 @@ def load_bq(uris):
 def parent_etl() -> None:
     """The main ETL function"""
     write_gcs(path)
-    write_gcs_c(path_countries)
-    uris = ['gs://dtc_data_lake_zoomcamp-380308/carbon_data/emissions.parquet.gz']
-    load_bq(uris)
+    #write_gcs_c(path_countries)
+    #uris = ['gs://dtc_data_lake_zoomcamp-380308/carbon_data/emissions.parquet.gz']
+    #load_bq(uris)
         
 if __name__ == "__main__":
     parent_etl()
